@@ -1,0 +1,55 @@
+<html>
+  <div style="text-align-last: right; padding-right: 45%">
+    <h1>Add a New Player</h1>
+
+    <label><b>Name</b></label
+    >&nbsp;&nbsp;&nbsp;&nbsp;
+    <input
+      style="text-align-last: start"
+      type="text"
+      name="name"
+      id="name"
+      #Name
+    /><br />
+    <label><b>Matches</b></label
+    >&nbsp;
+    <input
+      style="text-align-last: start"
+      type="number"
+      name="Matches"
+      id="Matches"
+      #Matches
+    /><br />
+    <label><b>Runs</b></label
+    >&nbsp;
+    <input
+      style="text-align-last: start"
+      type="Number"
+      name="Runs"
+      id="Runs"
+      #Runs
+    /><br />
+    <label><b>Fifties</b></label
+    >&nbsp;
+    <input
+      style="text-align-last: start"
+      type="Number"
+      name="Fifties"
+      id="Fifties"
+      #Fifties
+    /><br />
+    <br />
+    <button
+      type="button"
+      style="margin-right: 6%"
+      (click)="Register(Name.value, Matches.value, Runs.value, Fifties.value)"
+    >
+      Register
+    </button>
+    <button type="button" style="margin-right: 15px">
+      <a routerLink="/dashboard" style="text-decoration: none; color: black"
+        >Back</a
+      >
+    </button>
+  </div>
+</html>
